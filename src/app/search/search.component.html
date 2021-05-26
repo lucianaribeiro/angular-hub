@@ -1,0 +1,7 @@
+<div class="searchForm">
+  <form [formGroup]="searchForm" (submit)="onSubmit()">
+    <!-- <label for="search">Search Repo:</label>  -->
+    <input type="text" id="search" class="searchInput" formControlName="search" />
+    <button type="submit" [ngClass]="{'btn-disabled': searchForm.invalid}" [disabled]="searchForm.invalid">Search</button>
+  </form>
+</div>

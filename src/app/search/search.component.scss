@@ -1,0 +1,34 @@
+.searchInput {
+    border: 0;
+    border-radius: 3em;
+    border-color: white;
+    box-shadow: 0;
+    outline: none;
+    padding: 1em 2em;
+    width: 30em;
+}
+
+.searchForm {
+    [type="submit"] {
+        margin-left: 2em;
+        padding: .5em 2em;
+        background-color: dodgerblue;
+        color: white;
+        border-radius: 3em;
+        box-shadow: none;
+        cursor: pointer;
+        border: 0;
+    }
+
+    [type="submit"]:focus {
+        box-shadow: 0 0 1pt 1pt dodgerblue;
+    }
+
+    .btn-disabled {
+      background-color: grey;
+    }
+}
+
+.searchInput:focus {
+    box-shadow: 0 0 1pt 1pt white;
+}
